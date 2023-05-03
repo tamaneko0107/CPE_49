@@ -1,4 +1,18 @@
-str1 = "\"To be or not to be,\" quoth the Bard, \"that is the question\"."
-a = str1.replace('"', "\'\'", 1)
+def generator1():
+    yield 'one'
+    yield 'three'
 
-print(a)
+
+def generator2():
+    yield 'two'
+
+
+def generator(g1, g2):
+    yield from g1
+    yield from g2
+
+
+gen = generator(generator1(), generator2())
+
+for x in gen:
+    print(x)
