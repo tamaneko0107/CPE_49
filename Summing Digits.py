@@ -6,7 +6,7 @@ def f(n):
         print(int(n))
     else:
         l = map(int, n)
-        r = reduce(lambda x, y: x+y, list(l))
+        r = reduce(lambda x, y: x+y, list(l))  # sum(list(l))
         return f(str(r))
 
 

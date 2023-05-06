@@ -1,1 +1,2 @@
-print(3**3)
+n = 2.345
+print(n-int(n))
