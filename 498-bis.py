@@ -1,3 +1,5 @@
+#參考影片https://www.youtube.com/watch?v=KtVFbcCfvkU
+
 while True:
     try:
         x = int(input())
