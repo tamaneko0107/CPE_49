@@ -16,6 +16,7 @@ for i in range(n):
             total += 1
         except EOFError:
             break
-    for i in sorted(data.keys()):
-        print(f'{i} {data[i]/total*100:.4f}')
-    print()
+    for j in sorted(data.keys()):
+        print(f'{j} {data[j]/total*100:.4f}')
+    if i != n-1:
+        print()
