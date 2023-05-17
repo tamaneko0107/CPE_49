@@ -14,7 +14,6 @@ while True:
         currentX, currentY = map(int, s[:2])
         direct = s[2]
         cur_dir = d[direct]
-        l = 0
 
         for c in input():
             l = 0

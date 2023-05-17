@@ -1,8 +1,6 @@
-from sys import stdin
-
-z = int(stdin.readline())
+z = int(input())
 for _ in range(z):
-    arr = [int(i) for i in stdin.readline().split()]
+    arr = list(map(int, input().split()))
     mid = arr[0]//2
     arr = arr[1:]
     arr.sort()

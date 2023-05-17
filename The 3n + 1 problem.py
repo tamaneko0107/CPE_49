@@ -1,22 +1,27 @@
-def algorithm(n):
-    c = 1
-    while(n!=1):
-        if(n%2==1):
-            n = 3*n+1
-        else:
-            n /= 2
-        c += 1
-    return c
+#參考資料https://github.com/jlhung/UVA-Python/blob/master/100%20-%20The%203n%20%2B%201%20problem.py
 
+def algorithm(n):
+    if n in d:
+        return d[n]
+    if n <= 1:
+        return 1
+    if n % 2 == 1:
+        y = 3*n+1
+    else:
+        y = n//2
+    d[n] = 1 + algorithm(y)
+    return d[n]
+
+
+d = {}
 while True:
     try:
-        i, j = map(int, input().split())
-        if(i<=j):
-            x = [algorithm(g) for g in range(i,j+1)]
-        elif(j<i):
-            x = [algorithm(g) for g in range(j,i+1)]
-        print(f'{i} {j} {max(x)}')
-    except ValueError:
+        x, y = map(int, input().split())
+        max_cy = 0
+        for i in range(min(x, y), max(x, y)+1):
+            n = algorithm(i)
+            if n > max_cy:
+                max_cy = n
+        print(f'{x} {y} {max_cy}')
+    except EOFError:
         break
-
-    

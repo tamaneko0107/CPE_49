@@ -15,4 +15,4 @@ while True:
         else:
             print(" ", end="")
 
-    print("")
+    print()

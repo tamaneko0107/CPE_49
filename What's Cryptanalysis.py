@@ -1,3 +1,5 @@
+#依照數量排序由大至小排序，若相同依照字母排序
+
 z = int(input())
 total = {}
 for _ in range(z):

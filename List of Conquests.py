@@ -1,3 +1,5 @@
+#依照字母排序
+
 z = int(input())
 total = []
 for _ in range(z):
