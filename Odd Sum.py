@@ -1,3 +1,5 @@
+#第一列為測資數量，每組測資有兩列，計算值域內所有基數和
+
 T = int(input())
 for i in range(T):
     a = int(input())

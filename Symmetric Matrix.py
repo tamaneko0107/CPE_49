@@ -1,3 +1,6 @@
+#檢查該N*N的矩陣是否為對稱中心點的矩陣
+#將矩陣攤平成一列可發現左右相反對稱
+
 def is_symmetric(matrix, n):
     index = 0
     while (index <= (n*n-1-index)):

@@ -1,3 +1,5 @@
+# 字母排序由小到大
+
 while True:
     try:
         a = list(input())
@@ -9,6 +11,6 @@ while True:
                 x.append(i)
                 b.remove(i)
         x.sort()
-        (lambda x: print(''.join(x)))(x)
+        print(''.join(x))
     except EOFError:
         break

@@ -1,4 +1,6 @@
 #參考影片https://www.youtube.com/watch?v=KtVFbcCfvkU
+#每組測資有兩行，第一行為X的值，第二行為方程式(降幕)
+#求微分值
 
 while True:
     try:
