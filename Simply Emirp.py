@@ -1,3 +1,6 @@
+#每次測資有一個整數N
+#判斷N整數和反轉後的N整數是否都是質數
+
 def is_prime(n):
     for i in range(2, int(n**(1/2))+1, 1):
         if n % i == 0:

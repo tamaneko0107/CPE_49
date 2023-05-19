@@ -13,6 +13,14 @@ def base_change(n,data):
             total+=data[i]
         output.append(total)
     return output
+
+    #進制轉換與cost總和
+    # total = [0 for i in range(35)]
+	# 	for k in range(2, 37):
+	# 		t = number
+	# 		while t > 0:
+	# 			total[k-2] += a[t % k]
+	# 			t //= k
     
 
 case = int(input())
@@ -34,4 +42,5 @@ for i in range(case):
             if y == min_cost:
                 print(f' {x+2}',end='')
         print()
-    print()
+    if i != case-1:
+        print()
