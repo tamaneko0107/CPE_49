@@ -1,9 +1,12 @@
+#第一行為指令個數
+#指令為朝哪個方向滾
+
 while True:
     n = int(input())
     if n == 0:
         break
-    x = [1, 4, 6, 3]
-    y = [1, 2, 6, 5]
+    x = [1, 4, 6, 3]    #[上，東，下，西]
+    y = [1, 2, 6, 5]    #[上，北，下，南]
     for i in range(n):
         command = input()
         if command == 'north':

@@ -1,4 +1,6 @@
 #參考影片https://www.youtube.com/watch?v=lSh7iT8cnYk
+#輸入第一行代表有n組測資
+#找出一組測資中的中位數(A)與測資中有幾項符合要求，最後還有總共有多少總可能
 
 while True:
     try:

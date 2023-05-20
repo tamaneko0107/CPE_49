@@ -1,3 +1,6 @@
+# 踩地雷
+#每組測資有n、m兩個整數，代表長寬大小
+
 field = 1
 while True:
     n, m = map(int, input().split())
@@ -16,6 +19,8 @@ while True:
                 c += map_list[i][j-1:j+2].count('*')
                 c += map_list[i+1][j-1:j+2].count('*')
                 map_list[i] = map_list[i][:j]+str(c)+map_list[i][j+1:]
+    if field != 1:
+        print()
     print(f'Field #{field}:')
     for i in range(1, n+1):
         print(map_list[i][1:m+1])
